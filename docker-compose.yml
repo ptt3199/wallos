@@ -7,7 +7,7 @@ services:
     environment:
       TZ: 'Asia/Ho_Chi_Minh'  
     volumes:
-      - ./db:/var/www/html/db               
+      - /opt/wallos/db:/var/www/html/db              
     restart: unless-stopped
     dns:
     - 1.1.1.1

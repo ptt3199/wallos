@@ -9,3 +9,6 @@ services:
     volumes:
       - ./db:/var/www/html/db               
     restart: unless-stopped
+    dns:
+    - 1.1.1.1
+    - 8.8.8.8
